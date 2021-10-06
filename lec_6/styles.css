@@ -1,0 +1,98 @@
+.inp {
+    display: block;
+    margin-bottom: 3%;
+    width: 60%;
+    padding: 2%;
+}
+
+label {
+    display: block;
+    margin-bottom: 3%;
+}
+
+.frm {
+    background-color: aqua;
+    width: 30%;
+    padding: 2%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* margin: 0 auto; */
+    /* for center alignment */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* first - x axis second - y axis */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    /* for horizontal center alignment */
+    height: 400px;
+    border: 1px solid black;
+    align-items: center;
+    /* for vertical center alignment */
+    align-content: center;
+}
+
+
+/* label is inline by default */
+
+
+/* we made block using CSS */
+
+.box {
+    display: flex;
+    align-items: stretch;
+    /* default value is stretch */
+    /* align-content: center; */
+    text-align: center;
+}
+
+.box div {
+    border: 1px solid black;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+
+.box-1 {
+    flex: 1;
+    order: 3;
+}
+
+.box-2 {
+    flex: 2;
+    order: 1;
+}
+
+.box-3 {
+    flex: 1;
+    order: 2;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    font-style: italic;
+}
+
+a:hover {
+    color: red;
+    font-size: 50px;
+}
+
+a::after {
+    content: "66";
+}
+
+
+/* pseudo classes */
+
+
+/* for next class
+pseudo classes
+flexbox
+position : absolute */
