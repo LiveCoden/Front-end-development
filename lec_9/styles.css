@@ -1,0 +1,40 @@
+/* body {
+    background-color: black;
+}
+
+div {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 4%;
+    width: 500px;
+    text-align: center;
+    background-color: red;
+    margin: 100px;
+    padding: 100px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+} */
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.flx {
+    border: 1px solid black;
+    padding: 1%;
+    margin-bottom: 1%;
+    transition: all 1s;
+}
+
+.flx:hover {
+    background-color: black;
+    color: white;
+}

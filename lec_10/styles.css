@@ -1,0 +1,59 @@
+/* .img-res {
+    width: 800px;
+    max-width: 800px;
+}
+
+body {
+    background-color: white;
+}
+
+@media  screen and (max-width:1000px)  and  (min-width:1000px){
+    .img-res {
+        width: 500px;
+    }
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .img-res {
+        width: 500px;
+    }
+    body {
+        background-color: black;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .img-res {
+        width: 500px;
+    }
+    body {
+        background-color: red;
+    }
+}
+
+.fa-twitter {
+    color: #00acee;
+    font-size: 100px;
+    transition: all 1s;
+}
+
+.fa-twitter:hover {
+    color: black;
+    font-size: 130px;
+} */
+
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex-basis: 49%;
+    border: 1px solid black;
+    margin-bottom: 1%;
+}
