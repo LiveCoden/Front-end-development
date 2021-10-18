@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 45%;
+}
+
+@media screen and (max-width: 613px) {
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .box {
+        width: 28%;
+    }
+}
