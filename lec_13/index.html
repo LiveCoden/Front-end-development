@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="title">Hello World</h1>
+    <button id="btn">Click Me</button>
+
+    <ul id="list">
+        <li>
+        </li>
+
+    </ul>
+
+    <script>
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function() {
+            document.getElementById("title").style.color = "red";
+
+        })
+        let ul = document.getElementById('list');
+
+        let list = [1, 2, 3, 4, 5];
+
+        async function getdata() {
+            console.log("it worked");
+            // GET request
+            let response = await fetch('https://jsonplaceholder.typicode.com/posts')
+            console.log("it worked after");
+            data = await response.json();
+
+
+            for (let i = 0; i < data.length; i++) {
+
+                let li = document.createElement('li'); // created an li element
+                li.innerHTML = data[i].title; // insert the title of the post
+                ul.appendChild(li); // append the li to the ul
+
+
+            }
+
+
+        }
+
+
+
+        getdata();
+
+        //GET, POST, PUT , DELETE 
+
+        /*
+        post -  id , img , title, commnents
+        */
+
+        // SEND API LINK
+    </script>
+
+
+</body>
+
+</html>
+
+
+API GET AND POST PROMISES THEN FUNCTION all of the above methods return data
