@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="hello">
+        <h1>Hello World</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem!</p>
+    </div>
+
+    <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+
+
+
+    <img id="github" width="200px">
+
+    <script>
+        /*        let element = document.getElementById('hello');
+
+                                                                                                                                                                                        let x = 1
+                                                                                                                                                                                        var y = 1
+                                                                                                                                                                                        console.log(x) // 1
+                                                                                                                                                                                        console.log(y) // 1
+                                                                                                                                                                                        if (x == y) {
+                                                                                                                                                                                            let x = 2
+                                                                                                                                                                                            var y = "hello"
+                                                                                                                                                                                        }
+                                                                                                                                                                                        console.log(x) // 1
+                                                                                                                                                                                        console.log(y) // 2
+
+                                                                                                                                                                                        let boxes = document.getElementsByClassName('box');
+
+
+
+                                                                                                                                                                                        element.addEventListener('mouseenter', function() {
+                                                                                                                                                                                            console.log('Hello World')
+                                                                                                                                                                                            hello.style.backgroundColor = 'red'
+                                                                                                                                                                                        })
+
+
+
+
+                                                                                                                                                                                        
+                                                                                                                                                                                        console.log(boxes)
+                                                                                                                                                                                        */
+
+        function print() {
+            console.log("10 seconds have passed")
+
+
+        }
+
+        setTimeout(() => {
+
+            }
+
+            , 10000)
+
+
+
+
+        async function getdata() {
+
+            const response = await fetch('https://api.github.com/users/livecoden');
+            data = await response.json();
+            console.log(data);
+            document.getElementById('github').src = data.avatar_url;
+
+
+        }
+
+        getdata()
+
+
+
+        /* function sendCertificate() {
+
+            for (let i = 0; i < 100; i++) {
+
+                cert = generateCertificate()
+                sendMail(emaili, cert)
+
+            }
+ 
+
+        }
+        */
+
+
+        //sendCertificate()
+
+        // var value changes globally even when you change it locally
+    </script>
+</body>
+
+</html>

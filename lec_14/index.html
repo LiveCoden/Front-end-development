@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #crypto {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .card {
+            background-color: cyan;
+            padding: 2%;
+            width: 30%;
+            border: 1px solid black;
+            border-radius: 10%;
+            color: white;
+        }
+        
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="crypto">
+
+
+
+    </div>
+    <script>
+        let crypto = document.getElementById('crypto');
+        async function getdata() {
+            response = await fetch(" https://rest.coinapi.io/v1/assets", {
+                method: "GET",
+                headers: {
+                    "content-type": "application/json",
+                    'X-coinAPI-key': "A1FFC587-9536-49BA-915A-0BAA0CBFB691"
+                }
+            });
+            data = await response.json();
+            console.log(response)
+
+
+            for (let i = 0; i < 10; i++) {
+                //console.log(data[i].asset_id + " " + data[i].name + " " + data[i].price_usd);
+                let element = document.createElement("P"); // Create a <p> element
+                element.innerHTML = "<h1>" + data[i].asset_id + " : " + data[i].price_usd + "</h1>" // Insert text
+                element.classList = ["card", ]
+                document.getElementById("crypto").appendChild(element); // Append <p> to <div> with id="crypto"
+
+
+            }
+
+        }
+
+        getdata();
+    </script>
+</body>
+
+</html>
