@@ -13,7 +13,7 @@
             justify-content: space-evenly;
         }
         
-        .card {
+        .card p-1 p-5 {
             background-color: cyan;
             padding: 2%;
             width: 30%;
@@ -52,7 +52,7 @@
                 //console.log(data[i].asset_id + " " + data[i].name + " " + data[i].price_usd);
                 let element = document.createElement("P"); // Create a <p> element
                 element.innerHTML = "<h1>" + data[i].asset_id + " : " + data[i].price_usd + "</h1>" // Insert text
-                element.classList = ["card", ]
+                element.classList = ["card ", ]
                 document.getElementById("crypto").appendChild(element); // Append <p> to <div> with id="crypto"
 
 
